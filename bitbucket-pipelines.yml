@@ -1,0 +1,23 @@
+image: composer
+
+pipelines:
+  default:
+    - parallel:
+      - step:
+          caches:
+            - composer
+          name: Check code style
+          script:
+            - make cs
+      - step:
+          caches:
+            - composer
+          name: Run static analysis
+          script:
+            - make stan
+      - step:
+          caches:
+            - composer
+          name: Run tests
+          script:
+            - make unit
