@@ -25,4 +25,7 @@ class Change
      * @var int
      */
     public $coin1 = 0;
+    
+
+
 }
