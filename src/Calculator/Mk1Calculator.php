@@ -15,10 +15,8 @@ Class Mk1Calculator implements CalculatorInterface
      * @return string Indicates the model of automaton
      */
     public function getSupportedModel(): string
-    {        
-
+    {  
         return 'mk1';
-
     }
 
     /**
